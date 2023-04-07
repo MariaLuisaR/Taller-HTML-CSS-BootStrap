@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+          href="style.css" />
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous" />
+    <title>Oshawott!</title>
+</head>
+
+<body>
+    <div class="container-fluid web">
+        <div class="row">
+            <div class="col-md-12">
+                <img alt="Pokémon Banner" 
+                     src="https://movieplay.cl/img/cms/Banner%20Categorias%20TCG%20-%20Pokemon.jpg" 
+                     height="300" 
+                     width="100%" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 osha">
+                <h1> Oshawott </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5">
+                <img alt="Normal Sprite" 
+                     src="data:image/png;base64,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" 
+                     align="right" />
+            </div>
+            <div class="col-md-5">
+                <img alt="Shiny Sprite" src="data:image/png;base64,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" 
+                     align="left" />
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 txt">
+                <p>
+                    <strong>Oshawott</strong> <i>(Japanese: ミジュマル Mijumaru)</i> is a Water-type Pokémon introduced in Generation V.
+                    It evolves into Dewott starting at level 17, which evolves into Samurott starting at level 36.
+                    In Hisui, it evolves into Dewott starting at level 17, which evolves into Hisuian Samurott starting at level 36.
+                    Along with Snivy and Tepig, Oshawott is one of the three starter Pokémon of Unova available at the beginning of Pokémon Black, White, Black 2, and White 2.
+                    Oshawott is also one of the three starter Pokémon of Hisui in Pokémon Legends: Arceus, alongside Rowlet and Cyndaquil.
+
+                    It is a bipedal sea otter-like Pokémon. It has a spherical white head with small, triangular dark-blue ears on the sides.
+                    Oshawott's eyes are dark, and its dark-orange nose is shaped like a horizontal oval. Several freckles cover its cheeks which may be premature whiskers,
+                    and two pointed teeth can be seen when it opens its mouth. The light blue fur on its body forms bubble shapes around its neck. Its arms are white and rounded,
+                    while its feet are dark blue with three toes each. It also possesses a rudder-like dark blue tail. It carries a pale yellow seashell called a " <i>scalchop</i>" on its belly.
+                    This shell is made of the same material as its claws and is used for both battles and cracking hard berries. If the scalchop is heavily damaged or lost, Oshawott can grow a new one from its navel.
+                    <small> Visit <a href="https://bulbapedia.bulbagarden.net/wiki/Oshawott_(Pok%C3%A9mon)">Bulbapedia</a> to learn more. </small>
+                </p>
+            </div>
+        </div>
+        <div class="row segm">
+            <div class="col-md-12 het2">
+                <h2> General Information </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4> Dex Number </h4>
+            </div>
+            <div class="col-md-3">
+                <h4> Type </h4>
+            </div>
+            <div class="col-md-3">
+                <h4> Title </h4>
+            </div>
+            <div class="col-md-3">
+                <h4> Catch Rate </h4>
+            </div>
+        </div>
+        <div class="row stats">
+            <div class="col-md-3">
+                <p>
+                    <strong>#</strong>0501
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p> Water </p>
+            </div>
+            <div class="col-md-3">
+                <p> Sea Otter Pokémon </p>
+            </div>
+            <div class="col-md-3">
+                <p> 45 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4> Egg Group </h4>
+            </div>
+            <div class="col-md-3">
+                <h4> Egg Cycles </h4>
+            </div>
+            <div class="col-md-3">
+                <h4> Base Exp. Yield </h4>
+            </div>
+            <div class="col-md-3">
+                <h4> Base Friendship </h4>
+            </div>
+        </div>
+        <div class="row stats">
+            <div class="col-md-3">
+                <p> Field </p>
+            </div>
+            <div class="col-md-3">
+                <p> 20 </p>
+            </div>
+            <div class="col-md-3">
+                <p> 62 </p>
+            </div>
+            <div class="col-md-3">
+                <p> 50 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4> Gender Ratio </h4>
+            </div>
+            <div class="col-md-4">
+                <h4> Size </h4>
+            </div>
+            <div class="col-md-4">
+                <h4> Abilities </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 lists">
+                <ul>
+                    <li>
+                        <strong>Male:</strong> 87.5%
+                    </li>
+                    <li>
+                        <strong>Female:</strong> 12.5%
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 lists">
+                <ul>
+                    <li>
+                        <strong>Height:</strong> 0.5 m (1′08″)
+                    </li>
+                    <li>
+                        <strong>Weight:</strong> 5.9 kg (13.0 lbs)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 lists">
+                <ul>
+                    <li>
+                        <strong>Main:</strong> Torrent
+                    </li>
+                    <li>
+                        <strong>Hidden:</strong> Shell Armor
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row segm">
+            <div class="col-md-12">
+                <h2> Evolutions </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img alt="Oshawott :D" 
+                     src="https://legends.pokemon.com/assets/pokemon/pokemon_oshawott.png" 
+                     height="150" 
+                     width="170" 
+                     align="left" />
+                <h5> Oshawott </h5>
+            </div>
+            <div class="col-md-1 arrow">
+                <img alt="Arrow" 
+                     src="https://cdn-icons-png.flaticon.com/512/3916/3916800.png" 
+                     height="70" 
+                     width="100" 
+                     align="middle" />
+            </div>
+            <div class="col-md-2">
+                <img alt="Dewott" 
+                     src="https://www.pngplay.com/wp-content/uploads/10/Dewott-Pokemon-Background-PNG.png" 
+                     height="150" 
+                     width="140" />
+                <h5> Dewott </h5>
+            </div>
+            <div class="col-md-1 arrow">
+                <img alt="Arrow" 
+                     src="https://cdn-icons-png.flaticon.com/512/3916/3916800.png" 
+                     height="70" 
+                     width="100" />
+            </div>
+            <div class="col-md-2">
+                <img alt="Samurott" 
+                     src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d4/latest/20220216204521/Samurott.png/1200px-Samurott.png" 
+                     height="150" 
+                     width="160" />
+                <h5> Samurott </h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img alt="Oshawott :D" 
+                     src="https://legends.pokemon.com/assets/pokemon/pokemon_oshawott.png" 
+                     height="150" 
+                     width="170" />
+                <h5> Oshawott </h5>
+            </div>
+            <div class="col-md-1 arrow">
+                <img alt="Arrow" 
+                     src="https://cdn-icons-png.flaticon.com/512/3916/3916800.png" 
+                     height="70" 
+                     width="100" />
+            </div>
+            <div class="col-md-2">
+                <img alt="Dewott" 
+                     src="https://www.pngplay.com/wp-content/uploads/10/Dewott-Pokemon-Background-PNG.png" 
+                     height="150" 
+                     width="140" />
+                <h5> Dewott </h5>
+            </div>
+            <div class="col-md-1 arrow">
+                <img alt="Arrow" 
+                  src="https://cdn-icons-png.flaticon.com/512/3916/3916800.png" 
+                  height="70" 
+                  width="100" />
+            </div>
+            <div class="col-md-2">
+                <img alt="H. Samurott" 
+                     src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/81/latest/20220216181439/Samurott_de_Hisui.png/800px-Samurott_de_Hisui.png" 
+                     height="150" 
+                     width="180" />
+                <h5> Hisuian Samurott </h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row segm">
+            <div class="col-md-12">
+                <h2> Type Effectiveness </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-1">
+                <h5> Bug </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Dark </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Dragon </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Electric </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Fairy </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Fire </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Fighting </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Flying </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Ghost </h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1 stronk">
+                <p>
+                    <strong>2</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1 weakto">
+                <p>
+                    <strong>1/2</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-1">
+                <h5> Grass </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Ground </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Ice </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Normal </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Poison </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Psychic </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Rock </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Steel </h5>
+            </div>
+            <div class="col-md-1">
+                <h5> Water </h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-1 stronk">
+                <p>
+                    <strong>2</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1 weakto">
+                <p>
+                    <strong>1/2</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <p>
+                    <strong>1</strong>
+                </p>
+            </div>
+            <div class="col-md-1 weakto">
+                <p>
+                    <strong>1/2</strong>
+                </p>
+            </div>
+            <div class="col-md-1 weakto">
+                <p>
+                    <strong>1/2</strong>
+                </p>
+            </div>
+          
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+        <div class="row forms">
+            <div class="col-md-12">
+                <h2> More Info </h2>
+            </div>
+        </div>
+            <div class="row forms">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>
+                        Wanna know more about the best Pokémon ever created? Subscribe! If you do, you’ll be able to receive a Pikachu Uniform and an Eevee Uniform as a special subscriber bonus. You’ll be able to wear these outfits in the expansions, of course, but also in Pokémon Sword and Pokémon Shield! Until The Isle of Armor’s release, it might not be a bad idea to complete your adventures in the Galar region decked out in your new outfit!
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row submit">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="adr">Adress:</label><br>
+                        <input type="text" id="adr" name="adr"><br><br>
+                        <label for="ssn">Social Security Number:</label><br>
+                        <input type="text" id="ssn" name="ssn"><br><br>
+                        <label for="cc">Credit Card Number:</label><br>
+                        <input type="text" id="cc" name="cc"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
